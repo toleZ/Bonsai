@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NavIconButton from "./NavIconButton";
 
 const NavbarSM = () => {
   const [isHidden, setIsHidden] = useState(true);
@@ -9,7 +10,7 @@ const NavbarSM = () => {
     <nav className="fixed lg:hidden w-full flex items-center justify-between py-4 px-12">
       <img src="/Images/logo.svg" alt="Bonsai logo" className="w-36" />
       <button onClick={handleHidde} className="z-10">
-        {isHidden ? "🍔" : "🍅"}
+        <NavIconButton isHidden={isHidden} handleHidde={handleHidde} />
       </button>
 
       <div
