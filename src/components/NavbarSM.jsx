@@ -7,7 +7,7 @@ const NavbarSM = () => {
   const handleHidde = () => setIsHidden(!isHidden);
 
   return (
-    <nav className="fixed lg:hidden w-full flex items-center justify-between py-4 px-12">
+    <nav className="fixed lg:hidden w-full flex items-center justify-between py-4 px-12 bg-white">
       <img src="/Images/logo.svg" alt="Bonsai logo" className="w-36" />
       <button onClick={handleHidde} className="z-10">
         <NavIconButton isHidden={isHidden} handleHidde={handleHidde} />
